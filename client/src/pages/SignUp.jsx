@@ -14,7 +14,7 @@ export default function SignUp() {
 
   // submit form data to backend
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // block page refresh
     try {
       setLoading(true);
       const res = await fetch("/api/auth/signup", {
